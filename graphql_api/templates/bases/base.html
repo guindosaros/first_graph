@@ -24,12 +24,16 @@
                 data: {
                     data_all_categorie:[],
                     data_all_ingredient_by_category:[],
-                    data_single_category:[],
-                    base_url:'http://localhost:8000'
+                    data_single_ingredient:[],
+                    base_url:'http://localhost:8000',
+                    category_id:'',
                 },
                 delimiters: ["${", "}"],
                 mounted(){
+                    this.category_id="{{ pk }}" 
                     this.getdata()
+                    
+                    console.log(this.category_id)
                 },
                 methods:{
                     getdata: function(){
@@ -51,7 +55,7 @@
                                         }
                                         }
                                     },
-                                    category(id:"Q2F0ZWdvcnlOb2RlOjI="){
+                                    category(id:"${ this.category_id }"){
                                         name,
                                         ingredients{
                                         edges{
@@ -75,6 +79,8 @@
                         .then(response => {
             
                             result = response.data.data
+                            console.log(result.category)
+                            this.data_all_ingredient_by_category=result.category
                             this.data_all_categorie= result.allCategories.edges
                             console.log(this.data_all_categorie)
                         })  

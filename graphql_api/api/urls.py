@@ -4,6 +4,6 @@ from .views import category, cat_ingredient ,ingredient
 
 urlpatterns = [
     path('',category,name='category'),
-    path('ingre',cat_ingredient,name='ingredient_cat'),
+    path('category/<str:pk>',cat_ingredient,name='ingredient_cat'),
     path('ingredient',ingredient,name='ingredient'),
 ]
