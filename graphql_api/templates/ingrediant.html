@@ -1,0 +1,69 @@
+{% extends 'bases/base.html' %}
+{% block content %}
+    <section class="fdb-block bg-dark" style="background-image: url(imgs/hero/purple.svg);">
+        <div class="container">
+            <div class="row">
+            <div class="col text-center">
+                <h1>Ingrediants</h1>
+            </div>
+            </div>
+    
+            <div class="row-70"></div>
+    
+            <div class="row text-center justify-content-sm-center no-gutters mb-4">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-3 m-auto">
+                    <div class="fdb-box fdb-touch">
+                    <h2>Ingrediant 1</h2>
+                    <p>Nom</p>
+                    <p>notes</p>
+                    <p class="mt-4"><a href="{% url 'ingredient' %}">Learn More <i class="fas fa-angle-right"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-3 m-auto pt-5 pt-xl-0">
+                    <div class="fdb-box fdb-touch">
+                    <h2>Ingrediant 2</h2>
+                    <p>Nom</p>
+                    <p>notes</p>
+                    <p class="mt-4"><a href="{% url 'ingredient' %}">Learn More <i class="fas fa-angle-right"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-3 m-auto pt-5 pt-xl-0">
+                    <div class="fdb-box fdb-touch">
+                    <h2>Ingrediant 3</h2>
+                    <p>Nom</p>
+                    <p>notes</p>
+                    <p class="mt-4"><a href="{% url 'ingredient' %}">Learn More <i class="fas fa-angle-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center justify-content-sm-center no-gutters">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-3 m-auto">
+                    <div class="fdb-box fdb-touch">
+                    <h2>Ingrediant 4</h2>
+                    <p>Nom</p>
+                    <p>notes</p>
+                    <p class="mt-4"><a href="{% url 'ingredient' %}">Learn More <i class="fas fa-angle-right"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-3 m-auto pt-5 pt-xl-0">
+                    <div class="fdb-box fdb-touch">
+                    <h2>Ingrediant 5</h2>
+                    <p>Nom</p>
+                    <p>notes</p>
+                    <p class="mt-4"><a href="{% url 'ingredient' %}">Learn More <i class="fas fa-angle-right"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-3 m-auto pt-5 pt-xl-0">
+                    <div class="fdb-box fdb-touch">
+                    <h2>Ingrediant 6</h2>
+                    <p>Nom</p>
+                    <p>notes</p>
+                    <p class="mt-4"><a href="{% url 'ingredient' %}">Learn More <i class="fas fa-angle-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </section>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'bases/base.html' %}
+  {% block content %}
+    <section class="fdb-block" style="background-image: url(./imgs/shapes/1.svg)">
+    <div class="container">
+        <div class="row text-center">
+        <div class="col">
+            <h1 class="text-dark">Category</h1>
+        </div>
+        </div>
+
+        <div class="row mt-5 align-items-center">
+        <div v-for="item in data_all_categorie" class="col-12 col-sm-10 col-md-8 col-md-8 m-auto col-lg-4 text-center">
+            <div class="fdb-box shadow pb-5 pt-5 pl-3 pr-3 rounded">
+            <h2>${ item.node.name.substring(0,20) }</h2>
+           
+            <p class="h3 font-weight-light">Even the all-powerful Pointing has no control about.</p>
+
+            
+
+            <p><a :href=``+`${base_url}`+`/category/`+`${item.node.id}`+`` class="btn btn-outline-primary mt-4">Voir</a></p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+{% endblock %}
